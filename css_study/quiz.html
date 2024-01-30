@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .first {
+        display: flex;
+        justify-content: flex-start;
+
+        /* 세컨드의 너비가 바뀌더라도 변함이 없어야함 */
+        align-items: center;
+
+        flex-direction: column;
+
+        margin: 0 auto;
+        border: 2px solid black;
+        width: 500px;
+        height: 800px;
+    }
+
+    .second {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin: 10px 10px 0px 10px;
+        box-sizing: border-box;
+        border: 2px solid black;
+        width: 400px;
+        height: 100px;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .container2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid #000;
+        padding: 10px;
+        width: 600px;
+        height: 400px;
+    }
+
+    .box2 {
+        border: 1px solid #000000;
+        width: 100px;
+        height: 50px;
+    }
+</style>
+<body>
+    <div class="first">
+        <div class="second">
+            <button>버튼</button>
+        </div>
+        <div class="second">
+            <button>버튼</button>
+        </div>
+        <div class="second">
+            <button>버튼</button>
+        </div>
+        <div class="second">
+            <button>버튼</button>
+        </div>
+    </div>
+
+    <div class="container2">
+        <div class="box2"></div>
+        <div class="box2"></div>
+        <div class="box2"></div>
+        <div class="box2"></div>
+        <div class="box2"></div>
+        <div class="box2"></div>
+        <div class="box2"></div>
+        <div class="box2"></div>
+        <div class="box2"></div>
+        <div class="box2"></div>
+        <div class="box2"></div>
+        <div class="box2"></div>
+        <div class="box2"></div>
+    </div>
+</body>
+</html>

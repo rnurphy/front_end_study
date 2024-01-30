@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .container {
+            /* position은 어쩔수없이 겹쳐야할때만 쓰고 어지간하면 flex 쓰자 */
+            display: flex;
+            flex-direction: row; 
+
+            /* 수평 정렬 (주축)*/
+            justify-content: center;
+
+            /* flex-wrap: wrap; 항목을 여러줄에 표시(리버스 가능) */
+
+            /* 수직 정렬 (교차축)*/
+            align-items: center;
+
+            /* align-contents는 wrap으로 여러줄 생겼을 때 사용 */
+            
+            border: 1px solid #000;
+            height: 400px;
+
+            
+            /* justify-content: space-between; 양끝을 붙여놓고 그 사이 간격을 같게 */
+            /* justify-content: space-around; 센터를 기준으로 간격을 같게 */
+            /* justify-content: flex-end; 기본값은 flex-start */
+            /* flex-direction: column;  기본값은 row임 */
+        }
+        .box1 {
+            border: 1px solid #000;
+            width: 100px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+    </div>
+</body>
+</html>

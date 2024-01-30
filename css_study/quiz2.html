@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .frame {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        border: 1px solid black;
+        border-bottom: none;
+
+        width: 400px;
+        height: 500px;
+    }
+
+    .line {
+        box-sizing: border-box;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        border-bottom: 1px solid black;
+        
+        width: 400px;
+        height: 10%;
+    }
+
+    .frame .line:nth-child(2n) {
+        background-color: rgb(241, 230, 218);
+    }
+
+    .line > * {
+        margin-left: 5px;
+    }
+</style>
+<body>
+    <div class="frame">
+        <div class="line">
+            <p>Language</p>
+        </div>
+        <div class="line">
+            <button>JavaScript</button>
+            <button>TypeScript</button>
+            <button>C++</button>
+            <button>Java</button>
+            <button>Python</button>
+        </div>
+        <div class="line">
+            <p>Web Front-End</p>
+        </div>
+        <div class="line">
+            <button>React</button>
+            <button>Vue.js</button>
+        </div>
+        <div class="line">
+            <p>Web-Back-End</p>
+        </div>
+        <div class="line">
+            <button>JSP</button>
+            <button>Spring</button>
+            <button>Spring Boot</button>
+        </div>
+        <div class="line">
+            <p>DataBase</p>
+        </div>
+        <div class="line">
+            <button>Oracle</button>
+            <button>MySQL</button>
+            <button>MySQL Server</button>
+        </div>
+        <div class="line">
+            <p>etc</p>
+        </div>
+        <div class="line">
+            <button>Adobe Photoshop</button>
+            <button>Adobe Premiere Pro</button>
+            <button>Pro tools</button>
+        </div>
+    </div>
+</body>
+</html>

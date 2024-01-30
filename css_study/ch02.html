@@ -6,6 +6,7 @@
     <title>Document</title>
     <style>
         .box {
+            /* 기준을 어디까지 잡을지 설정 */
             box-sizing: border-box;
             margin: 40px;
             /* border는 따로따로 지정이 안됨 */
@@ -55,7 +56,9 @@
     <!-- input은 box-sizing: content-box; 로 잡혀있음  -->
     <input type="text">
 
-    <!-- 인라인 요소는 글자의 크기에 따라 너비와 높이가 늘어남 -->
+    <!-- 인라인 요소는 글자의 크기에 따라 너비와 높이가 정해짐 -->
+    <!-- Margin top bottom 설정 불가 -->
+    <!-- 패딩은 존재 -->
     <span class="text">일반 텍스트</span>
 
     <div class="box1">
